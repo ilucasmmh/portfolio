@@ -214,7 +214,7 @@ body{
 
 /*START CONTACT SECTION*/
 #contact{
-    min-height: 80vh;
+    min-height: auto;
 }
 
 .form-control:active, .form-control:focus{
