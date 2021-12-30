@@ -266,6 +266,10 @@ body{
     .eduboxes i{
         left: -9%;
     }
+    
+    #contact{
+        min-height: auto;
+    }
 }
 
 @media (max-width:400px){
@@ -283,6 +287,10 @@ body{
 
     .eduboxes i{
         left: -9%;
+    }
+    
+    #contact{
+        min-height: auto;
     }
  }
 /*END MEDIA QUERIES SECION*/
