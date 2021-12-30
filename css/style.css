@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+}
+
+:root{
+    --primary-color: #0f5f53;
+    --white: #fff;
+    --black-less: #4a4545;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    overflow-x: hidden;
+}
+
+.headings{
+    color: var(--primary-color);
+}
+
+.btn-pris{
+    background: var(--primary-color);
+    color: var(--white);
+    border: 3px solid var(--primary-color);
+
+    transition: all 0.5s ease;
+}
+
+.btn-pris:hover{
+    background: var(--white);
+    color: var(--primary-color);   
+}
+
+.btn-secs{
+    background: var(--white);
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+
+    transition: all 0.5s ease;
+}
+
+.btn-secs:hover{
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-pris:active, .btn-secs:active{
+    transform: scale(0.98);
+}
+
+.btn-pris:focus, .btn-secs:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+.underlines{
+    border-bottom: 2px solid var(--black-less);
+}
+
+/*START HEADER*/
+
+/*START NAVBAR*/
+.navbar{
+    padding: 5px 30px;
+
+    transition: all 0.7s ease;
+}
+
+.navmenus{
+    padding: 0 30px;
+}
+
+.navbuttons{
+    border: none;
+}
+
+.navbuttons:focus, .navbuttons:active{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.menuitems{
+    color: var(--primary-color) !important;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0 5px;
+    border-bottom: 3px solid transparent;
+
+    transition: border-bottom 0.5s ease;
+}
+
+.menuitems:hover, .menuitems:focus, .menuitems:active{
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.lines1, .lines2, .lines3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    background: var(--primary-color);
+   
+    transition: all 0.4s;
+}
+
+.changes .lines1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.changes .lines2{
+    opacity: 0;
+}
+
+.changes .lines3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/*END NAVBAR*/
+
+/* START BANNER SECTION */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerimgs img{
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+/*END BANNER SECTION*/
+
+/*END HEADER*/
+
+/*START EDUCATION SECTION*/
+.eduboxes{
+    border-left: 3px solid var(--black-less);
+
+    position: relative;
+}
+
+.eduboxes span{
+    font-size: 12px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50px;
+}
+
+.eduboxes i{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 40px;
+
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -9%;
+    left: -7%;
+}
+
+.eduboxes p{
+    font-size: 18px;
+}
+/*END EDUCATION SECTION*/
+
+/*START PROJECT SECTION*/
+#project{
+    margin-bottom: 100px;
+}
+
+.gallerylists{
+    cursor: pointer;
+}
+
+.gallerylists.activeitems{
+    color: var(--primary-color);
+}
+
+.filters{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.filters img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.filters:hover{
+    transform: scale(1.05);
+
+    transition: all 0.5s ease;
+}
+/*END PROJECT SECTION*/
+
+/*START CONTACT SECTION*/
+#contact{
+    min-height: 80vh;
+}
+
+.form-control:active, .form-control:focus{
+    outline: 0;
+    box-shadow: none;
+
+    border-color: var(--primary-color);
+}
+
+.socialmedias:hover, .socialmedias:active, .socialmedias:focus{
+    color: var(--primary-color);
+}
+
+.socialmedias:active, .socialmedias:focus{
+    transform: scale(1.1);
+}
+/*END CONTACT SECTION*/
+
+/*START MEDIA QUERIES SECTION*/
+@media (max-width:1200px){
+    html{
+        font-size: 100%;
+    }
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 100%;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 100%;
+    }
+
+    section{
+        height: auto;
+    }
+
+    #home{
+        margin-top: 100px;
+    }
+
+    #education .row{
+        padding-left: 50px;
+    }
+
+    .eduboxes i{
+        left: -9%;
+    }
+}
+
+@media (max-width:400px){
+    html{
+        font-size: 100%;
+    }
+
+    section{
+        height: auto;
+    }
+
+    #home{
+        margin-top: 100px;
+    }
+
+    .eduboxes i{
+        left: -9%;
+    }
+ }
+/*END MEDIA QUERIES SECION*/
